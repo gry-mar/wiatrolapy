@@ -94,11 +94,13 @@ topics = [
 
 topics_a = [
     "aborcja",
-    "rząd pis (prawo i sprawiedliwość)",
+    "rząd pis (partia prawo i sprawiedliwość)",
+    "inflacja to wina pis",
+    "afera wizowa",
     "inflacja",
     "przyjmowanie imigrantów",
     "LGBT (społeczność LGBT, queer, homoseksualizm itp.)",
-    "kobiety",
+    "prawa kobiet",
     "węgiel",
     "program 500 plus",
     "program 800 plus",
@@ -126,25 +128,32 @@ topics_a = [
     "smoleńsk",
     "pomoc humanitarna na Ukrainie",
     "równość płci",
-    "zwiększenie wydatków na wojsko",
+    "wzmocnienie wojska polskiego",
     "trybunał konstytucyjny",
     "niezależność sądów (sądownictwo)",
     "tabletka dzień po",
     "rządy tuska",
     "strajk kobiet",
-    "rządy po (platforma obywatelskaj)",
     "wzrost cen paliw",
     "strajk nauczycieli",
     "referendum",
     "antysemityzm",
     "współpraca z Unią Europejską",
     "współpraca z USA (Stany Zjednoczone)",
-    "rząd Andrzeja Dudy",
+    "rząd Andrzeja Dudy (prezydenta)",
     "pegasus",
     "marsz niepodległości",
     "tvn",
     "komunizm", 
-    "osoby z niepełnosprawnościami"
+    "osoby z niepełnosprawnościami",
+    "współpraca z Niemcami",
+    "obniżenie podatków",
+    "stan wojenny",
+    "program polski ład",
+    "dochód nauczycieli",
+    "NATO",
+    "reparacje wojenne",
+    "nowelizacja kodeksu wyborczego"
 ]
 
 
@@ -227,7 +236,7 @@ def analyze_text(text: str) -> str:
 
     response = openai.chat.completions.create(
         model=model,
-        temperature=0.45,
+        temperature=0.4,
         messages=[
             {"role": "system", "content": system_content},
             {"role": "user", "content": content}
