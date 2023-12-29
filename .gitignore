@@ -1,2 +1,4 @@
 env
 data/
+bertopic_data/
+bertopic_results/
