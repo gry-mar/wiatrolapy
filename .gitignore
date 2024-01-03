@@ -3,3 +3,4 @@ data/
 dane
 .env
 __pycache__
+.conda/
