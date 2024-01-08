@@ -2,3 +2,8 @@ env
 data/
 bertopic_data/
 bertopic_results/
+.env
+fonts
+__pycache__
+.venv
+.DS_Store
