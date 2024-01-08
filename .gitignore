@@ -1,7 +1,13 @@
 env
 data/
+dane
+.env
+__pycache__
+.conda/
 bertopic_data/
 bertopic_results/
+
+
 .env
 fonts
 __pycache__
